@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memory Log</title>
+    <style>
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+        th { background: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h2>Shared Memory Log</h2>
+    <table>
+        <tr>
+            <th>Agent</th>
+            <th>Data</th>
+            <th>Timestamp</th>
+        </tr>
+        {% for entry in memory %}
+        <tr>
+            <td>{{ entry.agent }}</td>
+            <td>
+                {% if entry.result %}
+                    <strong>Result:</strong> {{ entry.result }}<br>
+                {% endif %}
+                {% if entry.intent %}
+                    <strong>Intent:</strong> {{ entry.intent }}<br>
+                {% endif %}
+                {% if entry.summary %}
+                    <strong>Summary:</strong> {{ entry.summary }}<br>
+                {% endif %}
+                {% if entry.alerts %}
+                    <strong>Alerts:</strong> {{ entry.alerts }}<br>
+                {% endif %}
+                {% if not entry.result and not entry.intent and not entry.summary and not entry.alerts %}
+                    —
+                {% endif %}
+            </td>
+            <td>{{ entry.timestamp }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

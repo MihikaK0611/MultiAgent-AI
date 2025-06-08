@@ -1,0 +1,21 @@
+{
+  "event_type": "webhook_triggered",
+  "timestamp": "2025-06-06T12:34:56Z",
+  "source_system": "OrderManagementV2",
+  "payload": {
+    "order_id": "ORD-123456",
+    "user_id": "U100987",
+    "items": [
+      {"sku": "AA1010", "quantity": 2},
+      {"sku": "BB2020", "quantity": 1}
+    ],
+    "shipping": {
+      "method": "Standard",
+      "expected_delivery": "2025-06-12"
+    },
+    "meta": {
+      "retry_count": 1,
+      "signature": "abc123xyz"
+    }
+  }
+}
