@@ -2,7 +2,7 @@ from groq import Groq
 from memory.memory_store import log_to_memory
 from utils.retry import retry
 
-client = Groq(api_key="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")
+client = Groq(api_key="")
 
 @retry(max_attempts=3)
 def process_email(text):

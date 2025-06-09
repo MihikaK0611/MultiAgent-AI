@@ -1,7 +1,7 @@
 from groq import Groq
 import os
 
-client = Groq(api_key="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")
+client = Groq(api_key="")
 
 def classify_input(text, format_type):
     prompt = f"""Classify the business intent of this {format_type} input.
