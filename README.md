@@ -63,10 +63,9 @@ Located in the `/samples` directory:
 
 | File                | Format | Description                             | Expected Outcome                          |
 |---------------------|--------|-----------------------------------------|--------------------------------------------|
-| `sample_invoice.pdf`| PDF    | Invoice over ₹10,000 + "GDPR" mention   | Finance + Compliance alert                 |
-| `sample_email.eml`  | Email  | Angry tone and high urgency             | CRM escalation                             |
-| `sample_valid.json` | JSON   | Valid schema, correct types             | No alert                                   |
-| `sample_invalid.json`| JSON  | Missing field or wrong type             | Alert for schema violation or type error   |
+| `sample_pdf.pdf`| PDF    | Invoice over ₹10,000 + "GDPR" mention   | Finance + Compliance alert                 |
+| `sample_email.txt`  | Email  | Angry tone and high urgency             | CRM escalation                             |
+| `sample_json.json`| JSON  | Missing field or wrong type             | Alert for schema violation or type error   |
 
 ---
 
