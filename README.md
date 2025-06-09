@@ -115,12 +115,12 @@ Beautifully rendered table showing agent names, outputs, and timestamps.
 
 1. **Install dependencies**
    ```bash
-   pip install -r requirements.txt
+   pip install fastapi uvicorn langchain textblob PyPDF2 jsonschema requests python-multipart groq gradio
    ```
 
 2. **Start FastAPI app**
    ```bash
-   uvicorn main:app --reload
+  uvicorn main:app --port 8000 --reload
    ```
 
 3. **Launch Gradio interface**
@@ -140,7 +140,8 @@ multi-agent-ai-system/
 ├── utils/
 ├── samples/
 ├── outputs/
-├── diagrams/
+├── routers/
+├── templates/
 ├── main.py
 └── README.md
 ```
