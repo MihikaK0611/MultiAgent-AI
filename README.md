@@ -96,7 +96,7 @@ Beautifully rendered table showing agent names, outputs, and timestamps.
 
 ## 🖼️ Agent Flow Diagram
 
-> *(Located at `diagrams/agent_flow_diagram.png`)*
+> *(Located at `image.png`)*
 
 ```
 [File Upload] → [Classifier] → [Router]
